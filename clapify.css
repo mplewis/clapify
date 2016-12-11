@@ -1,0 +1,32 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  margin: 40px 40px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 40px;
+  opacity: 0.5;
+}
+
+#subtitle {
+  font-size: 20px;
+}
+
+.inputs {
+  margin-top: 40px;
+}
+
+textarea, input {
+  width: 100%;
+}
+
+input.form-control {
+  text-align: center;
+  font-size: 72px;
+  height: 108px;
+}
+
+textarea {
+  rows: 10;
+}

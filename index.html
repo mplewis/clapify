@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clapify</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="clapify.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Clapify</h1>
+        <p id="subtitle"></p>
+      </div>
+    </div>
+    <div class="row inputs">
+      <div class="col-sm-4">
+        <p>1. Write your text here:</p>
+        <textarea id="input" class="form-control" rows="8">When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.</textarea>
+      </div>
+      <div class="col-sm-4">
+        <p>2. Type or paste an emoji here:</p>
+        <input id="emoji" type="text" class="form-control" placeholder="�" value="👏"></input>
+      </div>
+      <div class="col-sm-4">
+        <p>3. Get your relatable content here:</p>
+        <p id="output"></p>
+      </div>
+    </div>
+    <div class="row footer">
+      <a class="github-button" href="https://github.com/mplewis/clapify" data-style="mega" aria-label="View mplewis/clapify on GitHub">View on GitHub</a>
+    </div>
+  </div>
+  <script src="clapify.js"></script>
+  <script>
+    (function(c,l,a,p,i,f,y){c['GoogleAnalyticsObject']=i;c[i]=c[i]||function(){
+    (c[i].q=c[i].q||[]).push(arguments)},c[i].l=1*new Date();f=l.createElement(a),
+    y=l.getElementsByTagName(a)[0];f.async=1;f.src=p;y.parentNode.insertBefore(f,y)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88826743-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
