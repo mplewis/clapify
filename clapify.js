@@ -8,7 +8,7 @@ var subtitleText = 'Use emoji to emphasize your point'
 function onEdit () {
   var content = input.value.trim()
   var chr = emoji.value || '�'
-  output.innerText = content.replace(/\s+/g, chr)
+  output.innerText = content.split(content.indexOf(' ') > -1 ? ' ' : '').join(chr)
   subtitle.innerText = subtitleText.replace(/\s+/g, chr)
 }
 
