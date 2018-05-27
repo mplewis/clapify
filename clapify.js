@@ -5,10 +5,24 @@ var subtitle = document.querySelector('#subtitle')
 
 var subtitleText = 'Use emoji to emphasize your point'
 
-function onEdit () {
+function clapifyWords(text, emoji) {
+  return text.replace(/\s+/g, emoji)
+}
+
+function clapifyChars(word, emoji) {
+  return clapifyWords(word.split('').join(' '), emoji)
+}
+
+function clapify(text, emoji) {
+  return text.indexOf(' ') === -1
+    ? clapifyChars(text, emoji)
+    : clapifyWords(text, emoji)
+}
+
+function onEdit() {
   var content = input.value.trim()
   var chr = emoji.value || '�'
-  output.innerText = content.replace(/\s+/g, chr)
+  output.innerText = clapify(content, chr)
   subtitle.innerText = subtitleText.replace(/\s+/g, chr)
 }
 
